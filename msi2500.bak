@@ -111,15 +111,11 @@ Wire Wire Line
 Wire Wire Line
 	5100 4800 5100 4600
 Wire Wire Line
-	5200 4600 5200 4950
-Wire Wire Line
 	5200 4950 3700 4950
 Wire Wire Line
 	3700 5100 5300 5100
 Wire Wire Line
 	5300 5100 5300 4600
-Wire Wire Line
-	5400 4600 5400 5250
 Wire Wire Line
 	5400 5250 3700 5250
 Wire Wire Line
@@ -154,10 +150,10 @@ Wire Wire Line
 Wire Wire Line
 	4550 4250 4550 4450
 $Comp
-L C C7
+L C C8
 U 1 1 5C68D5CF
 P 6950 5450
-F 0 "C7" H 6975 5550 50  0000 L CNN
+F 0 "C8" H 6975 5550 50  0000 L CNN
 F 1 "1uF" H 6975 5350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6988 5300 50  0001 C CNN
 F 3 "" H 6950 5450 50  0001 C CNN
@@ -202,7 +198,7 @@ Wire Wire Line
 	5700 4600 5700 5600
 Wire Wire Line
 	5700 5600 5900 5600
-Text GLabel 5900 5600 2    39   Output ~ 0
+Text GLabel 5900 5600 2    39   Input ~ 0
 V18-SYNTH
 Wire Wire Line
 	6950 5100 6950 5300
@@ -295,12 +291,12 @@ Wire Wire Line
 Wire Wire Line
 	6450 4250 6450 4500
 Connection ~ 6800 4150
-Text GLabel 7000 3950 2    39   BiDi ~ 0
-USB-DM
+Text GLabel 7000 3950 2    39   Input ~ 0
+USB_DM
 Wire Wire Line
 	6250 4050 7000 4050
-Text GLabel 7000 4050 2    39   BiDi ~ 0
-USB-DP
+Text GLabel 7000 4050 2    39   Input ~ 0
+USB_DP
 Wire Wire Line
 	6250 3950 7000 3950
 $Comp
@@ -333,12 +329,8 @@ Wire Wire Line
 	6650 3800 6750 3800
 Wire Wire Line
 	7050 3800 7300 3800
-Text GLabel 6700 3100 2    39   Output ~ 0
+Text GLabel 6700 3100 2    39   Input ~ 0
 REFCLK
-Wire Wire Line
-	6250 3550 6300 3550
-Wire Wire Line
-	6300 3550 6300 3100
 Wire Wire Line
 	6300 3100 6700 3100
 $Comp
@@ -353,10 +345,10 @@ F 3 "" H 7100 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C8
+L C C9
 U 1 1 5C68E41D
 P 7500 3200
-F 0 "C8" H 7525 3300 50  0000 L CNN
+F 0 "C9" H 7525 3300 50  0000 L CNN
 F 1 "18pF" H 7300 3100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 7538 3050 50  0001 C CNN
 F 3 "" H 7500 3200 50  0001 C CNN
@@ -364,10 +356,10 @@ F 3 "" H 7500 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C9
+L C C10
 U 1 1 5C68E476
 P 7500 3600
-F 0 "C9" H 7525 3700 50  0000 L CNN
+F 0 "C10" H 7525 3700 50  0000 L CNN
 F 1 "18pF" H 7300 3500 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 7538 3450 50  0001 C CNN
 F 3 "" H 7500 3600 50  0001 C CNN
@@ -462,7 +454,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 2350 5150 2350
 Connection ~ 5150 2800
-Text GLabel 5350 1950 2    39   Output ~ 0
+Text GLabel 5350 1950 2    39   Input ~ 0
 VDDI
 Wire Wire Line
 	5350 1950 5250 1950
@@ -495,25 +487,21 @@ Wire Wire Line
 Connection ~ 5250 2050
 Wire Wire Line
 	4600 2050 4450 2050
-Text GLabel 5650 2350 1    39   Output ~ 0
+Text GLabel 5650 2350 1    39   Input ~ 0
 SPI_CLK
-Text GLabel 5750 2350 1    39   BiDi ~ 0
+Text GLabel 5750 2350 1    39   Input ~ 0
 SPI_DATA
-Text GLabel 5850 2350 1    39   Output ~ 0
+Text GLabel 5850 2350 1    39   Input ~ 0
 SPI_LAT
 Wire Wire Line
-	5650 3200 5650 2350
-Wire Wire Line
 	5750 2350 5750 3200
-Wire Wire Line
-	5850 3200 5850 2350
 $Comp
-L C C43
+L C C7
 U 1 1 5C6965F5
 P 6800 4400
-F 0 "C43" H 6825 4500 50  0000 L CNN
+F 0 "C7" H 6825 4500 50  0000 L CNN
 F 1 "10uF" H 6825 4300 50  0000 L CNN
-F 2 "" H 6838 4250 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6838 4250 50  0001 C CNN
 F 3 "" H 6800 4400 50  0001 C CNN
 	1    6800 4400
 	1    0    0    -1  
@@ -534,56 +522,56 @@ F 3 "" H 4900 3400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J?
+L Conn_01x01 J1
 U 1 1 5C69B0A4
 P 3500 3000
-F 0 "J?" H 3500 3100 50  0000 C CNN
+F 0 "J1" H 3500 3100 50  0000 C CNN
 F 1 "VCC_GPIO" H 3500 2900 50  0000 C CNN
-F 2 "" H 3500 3000 50  0001 C CNN
+F 2 "Connectors:Pin_d0.7mm_L6.5mm_W1.8mm_FlatFork" H 3500 3000 50  0001 C CNN
 F 3 "" H 3500 3000 50  0001 C CNN
 	1    3500 3000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J?
+L Conn_01x01 J2
 U 1 1 5C69B155
 P 3500 3300
-F 0 "J?" H 3500 3400 50  0000 C CNN
+F 0 "J2" H 3500 3400 50  0000 C CNN
 F 1 "GPIO0" H 3500 3200 50  0000 C CNN
-F 2 "" H 3500 3300 50  0001 C CNN
+F 2 "Connectors:Pin_d0.7mm_L6.5mm_W1.8mm_FlatFork" H 3500 3300 50  0001 C CNN
 F 3 "" H 3500 3300 50  0001 C CNN
 	1    3500 3300
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J?
+L Conn_01x01 J3
 U 1 1 5C69B1C1
 P 3500 3600
-F 0 "J?" H 3500 3700 50  0000 C CNN
+F 0 "J3" H 3500 3700 50  0000 C CNN
 F 1 "GPIO1" H 3500 3500 50  0000 C CNN
-F 2 "" H 3500 3600 50  0001 C CNN
+F 2 "Connectors:Pin_d0.7mm_L6.5mm_W1.8mm_FlatFork" H 3500 3600 50  0001 C CNN
 F 3 "" H 3500 3600 50  0001 C CNN
 	1    3500 3600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J?
+L Conn_01x01 J4
 U 1 1 5C69B1C7
 P 3500 3900
-F 0 "J?" H 3500 4000 50  0000 C CNN
+F 0 "J4" H 3500 4000 50  0000 C CNN
 F 1 "GPIO2" H 3500 3800 50  0000 C CNN
-F 2 "" H 3500 3900 50  0001 C CNN
+F 2 "Connectors:Pin_d0.7mm_L6.5mm_W1.8mm_FlatFork" H 3500 3900 50  0001 C CNN
 F 3 "" H 3500 3900 50  0001 C CNN
 	1    3500 3900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J?
+L Conn_01x01 J5
 U 1 1 5C69B2AD
 P 3500 4200
-F 0 "J?" H 3500 4300 50  0000 C CNN
+F 0 "J5" H 3500 4300 50  0000 C CNN
 F 1 "GPIO3" H 3500 4100 50  0000 C CNN
-F 2 "" H 3500 4200 50  0001 C CNN
+F 2 "Connectors:Pin_d0.7mm_L6.5mm_W1.8mm_FlatFork" H 3500 4200 50  0001 C CNN
 F 3 "" H 3500 4200 50  0001 C CNN
 	1    3500 4200
 	-1   0    0    -1  
@@ -622,4 +610,16 @@ Wire Wire Line
 	3900 3900 3900 4200
 Wire Wire Line
 	3900 4200 3700 4200
+Wire Wire Line
+	5200 4600 5200 4950
+Wire Wire Line
+	5400 5250 5400 4600
+Wire Wire Line
+	6300 3100 6300 3550
+Wire Wire Line
+	6300 3550 6250 3550
+Wire Wire Line
+	5650 3200 5650 2350
+Wire Wire Line
+	5850 3200 5850 2350
 $EndSCHEMATC
