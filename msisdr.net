@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source E:/work/msiSDR/msisdr.sch)
-    (date "2019/2/18 21:18:52")
+    (date "2019/2/19 21:25:35")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -686,16 +686,16 @@
         (pin (num 32) (name VCC_3V_DIGITAL) (type input))
         (pin (num 33) (name GND) (type input)))))
   (libraries
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical regul)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\regul.lib"))
-    (library (logical msi)
-      (uri E:\work\msiSDR\lib\msi.lib))
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical msi001)
       (uri E:\work\msiSDR\lib\msi001.lib))
+    (library (logical msi)
+      (uri E:\work\msiSDR\lib\msi.lib))
     (library (logical lp5900sdx-2)
       (uri E:\work\msiSDR\lib\lp5900sdx-2.lib)))
   (nets
