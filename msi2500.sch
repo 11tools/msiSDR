@@ -393,8 +393,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 3200 7350 3200
 Wire Wire Line
-	7100 2900 7100 3250
-Wire Wire Line
 	7350 3600 7100 3600
 Wire Wire Line
 	7100 3550 7100 3700
@@ -408,7 +406,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 3750 6450 3700
 Wire Wire Line
-	6450 3700 7100 3700
+	6450 3700 8200 3700
 Connection ~ 7100 3600
 $Comp
 L GND #PWR013
@@ -671,8 +669,6 @@ Wire Wire Line
 	7150 2300 8000 2300
 Wire Wire Line
 	8000 2300 8000 2900
-Wire Wire Line
-	8000 2900 7100 2900
 $Comp
 L LED D5
 U 1 1 5CAA11F1
@@ -736,4 +732,11 @@ Wire Wire Line
 Wire Wire Line
 	6750 2450 6750 2200
 Connection ~ 6750 2200
+Wire Wire Line
+	8000 2900 8200 2900
+Wire Wire Line
+	8200 2900 8200 3700
+Connection ~ 7100 3700
+Wire Wire Line
+	7100 3250 7100 3200
 $EndSCHEMATC
