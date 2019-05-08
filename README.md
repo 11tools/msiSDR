@@ -7,4 +7,4 @@ this is an Software Define Radio receiver PCB project base on msi2500 and msi001
 ![PCB](./pcb.jpg)
 
 
-![SDR](./SDR.png)
+![SDR](./usage.png)
